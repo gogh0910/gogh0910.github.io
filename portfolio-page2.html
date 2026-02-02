@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마인닷 (Mindot) 프로그램 소개서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #FDFBF7;
+            color: #3E2723;
+            scroll-behavior: smooth;
+        }
+        .font-serif { font-family: 'Noto Serif KR', serif; }
+        
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .dot-marker {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #8D6E63;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="relative min-h-[60vh] flex flex-col justify-center items-center text-center px-6 py-20 bg-[#F5F1E9]">
+        <div class="mb-6 fade-in">
+            <span class="inline-block px-4 py-1 border border-[#8D6E63] rounded-full text-xs font-bold tracking-[0.2em] text-[#8D6E63] uppercase">
+                Humanities Book Talk
+            </span>
+        </div>
+        <h1 class="text-6xl md:text-8xl font-serif font-bold mb-8 fade-in" style="animation-delay: 0.2s;">
+            마인닷<span class="text-[#8D6E63]">.</span>
+        </h1>
+        <p class="text-xl md:text-2xl font-light text-[#5D4037] max-w-3xl mx-auto leading-relaxed italic fade-in" style="animation-delay: 0.4s;">
+            "마음에 한 점(點), 한 생각에서 출발하는 책 이야기"
+        </p>
+        <div class="mt-12 fade-in" style="animation-delay: 0.6s;">
+            <a href="#episodes" class="bg-[#3E2723] text-white px-8 py-4 rounded-full font-medium hover:bg-[#8D6E63] transition-all duration-300">
+                프로그램 살펴보기 <i class="fa-solid fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Program Overview & Intent -->
+    <section class="max-w-6xl mx-auto px-6 py-24">
+        <div class="grid lg:grid-cols-12 gap-16 items-start">
+            <div class="lg:col-span-7 space-y-10">
+                <div class="space-y-4">
+                    <h2 class="text-sm font-bold tracking-widest text-[#8D6E63] flex items-center">
+                        <span class="dot-marker"></span> 01. PROGRAM OVERVIEW
+                    </h2>
+                    <h3 class="text-4xl font-serif font-bold leading-tight">
+                        일상 속 스쳐 지나가는 생각들,<br>
+                        우리 마음에 <span class="text-[#8D6E63]">깊은 울림</span>을 주는 시간
+                    </h3>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 gap-8 text-[#5D4037]">
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-[#EFEBE9]">
+                        <p class="font-bold text-[#8D6E63] mb-2 text-sm uppercase">Genre</p>
+                        <p class="text-lg">교양 / 북토크 / 인문학</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-[#EFEBE9]">
+                        <p class="font-bold text-[#8D6E63] mb-2 text-sm uppercase">Concept</p>
+                        <p class="text-sm leading-relaxed">단순한 책 소개를 넘어, 책이 품은 핵심 메시지를 통해 삶의 지혜와 성찰의 순간을 제공하는 고품격 북토크 프로그램</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4 pt-4 border-t border-[#EFEBE9]">
+                    <h2 class="text-sm font-bold tracking-widest text-[#8D6E63] flex items-center">
+                        <span class="dot-marker"></span> 02. PLANNING INTENT
+                    </h2>
+                    <p class="text-lg text-[#5D4037] leading-relaxed">
+                        정보의 홍수 속에서 우리는 정작 '나'를 돌아볼 시간을 잃어버렸습니다. <b>마인닷</b>은 잠시 멈추어 서서, 좋은 책이 던지는 질문을 통해 내면의 소리에 귀 기울이기를 제안합니다. 저자와의 깊이 있는 대화, 혹은 책 속의 지혜를 탐구하는 과정을 통해 시청자들의 마음에 잔잔하면서도 강력한 파동을 일으키고자 합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 relative">
+                <div class="bg-[#EFEBE9] rounded-[40px] p-10 flex flex-col justify-center items-center text-center space-y-8 aspect-square shadow-inner">
+                    <div class="w-24 h-24 bg-[#8D6E63] rounded-full flex items-center justify-center text-white shadow-xl">
+                        <i class="fa-solid fa-book-open text-4xl"></i>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-serif font-bold">마인닷 슬로건</h4>
+                        <p class="text-[#5D4037] italic font-light leading-relaxed">
+                            "바쁜 일상 속, 수많은 생각 가운데<br>
+                            마음에 깊은 울림을 주는 '한 점'을 찍다"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Concept -->
+    <section class="bg-[#3E2723] text-[#FDFBF7] py-24 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold tracking-widest text-[#D7CCC8] mb-4 uppercase">03. Visual Concept</h2>
+                <h3 class="text-3xl font-serif font-bold">따뜻하고 차분하며 깊이 있는 분위기</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="flex gap-6 items-start">
+                    <div class="w-16 h-16 shrink-0 bg-[#8D6E63] rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-palette text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-3 text-[#D7CCC8]">Visual Tone</h4>
+                        <p class="text-[#D7CCC8] leading-relaxed text-sm">
+                            눈을 편안하게 하는 난색 계열의 배경과 부드러운 조명을 사용하여, 시청자가 편안한 마음으로 이야기에 집중할 수 있도록 유도합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="w-16 h-16 shrink-0 bg-[#8D6E63] rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-video text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-3 text-[#D7CCC8]">Focus & Essence</h4>
+                        <p class="text-[#D7CCC8] leading-relaxed text-sm">
+                            화려한 효과보다는 인물의 표정과 대화의 내용, 그리고 책 자체가 가진 물성에 집중합니다. 썸네일 속 인물들의 온화하고 진중한 모습은 프로그램이 지향하는 깊은 소통을 대변합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights (Episodes) -->
+    <section id="episodes" class="max-w-7xl mx-auto px-6 py-24">
+        <div class="text-center mb-16 space-y-4">
+            <h2 class="text-sm font-bold tracking-widest text-[#8D6E63] uppercase">04. Highlights</h2>
+            <h3 class="text-4xl font-serif font-bold">대표적인 세 가지 지혜의 점</h3>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Episode 1: 반가사유상 -->
+            <div class="card-hover group bg-white rounded-3xl overflow-hidden border border-[#EFEBE9] flex flex-col h-full transition-all duration-500">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://img.youtube.com/vi/loDf3Hj_yaI/maxresdefault.jpg" alt="반가사유상 편" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <a href="https://youtu.be/loDf3Hj_yaI?si=fV_fNpoKTXOasCoR" target="_blank" class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-[#8D6E63]">
+                            <i class="fa-solid fa-play text-2xl ml-1"></i>
+                        </a>
+                    </div>
+                    <span class="absolute top-4 left-4 bg-white/90 text-[#3E2723] px-3 py-1 rounded-full text-xs font-bold shadow-sm">EP.01</span>
+                </div>
+                <div class="p-8 flex-grow flex flex-col space-y-4">
+                    <h4 class="text-2xl font-serif font-bold group-hover:text-[#8D6E63] transition-colors">반가사유상 편</h4>
+                    <p class="text-[#8D6E63] font-bold text-sm italic">"사유하는 삶에 대하여"</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-bold bg-[#F5F5F5] px-2 py-0.5 rounded text-[#A1887F]">#국보</span>
+                        <span class="text-[10px] font-bold bg-[#F5F5F5] px-2 py-0.5 rounded text-[#A1887F]">#성찰</span>
+                        <span class="text-[10px] font-bold bg-[#F5F5F5] px-2 py-0.5 rounded text-[#A1887F]">#예술과철학</span>
+                    </div>
+                    <p class="text-sm text-[#5D4037] leading-relaxed flex-grow">
+                        국보 '반가사유상'이 주인공이 된 특별한 에피소드입니다. 오묘한 미소를 띤 반가사유상의 모습은 그 자체로 우리에게 깊은 사유를 명합니다. 멈춤과 생각함, 그 찰나의 순간이 주는 영원한 가치를 예술적 시선으로 접근합니다.
+                    </p>
+                    <a href="https://youtu.be/loDf3Hj_yaI?si=fV_fNpoKTXOasCoR" target="_blank" class="w-full py-3 bg-[#3E2723] text-white rounded-xl text-center text-sm font-bold hover:bg-[#8D6E63] transition-colors">
+                        영상 시청하기 <i class="fa-solid fa-up-right-from-square ml-2 text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Episode 2: 전현수 박사 -->
+            <div class="card-hover group bg-white rounded-3xl overflow-hidden border border-[#EFEBE9] flex flex-col h-full transition-all duration-500">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://img.youtube.com/vi/8MX4o7AGB9I/maxresdefault.jpg" alt="전현수 박사 편" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <a href="https://youtu.be/8MX4o7AGB9I?si=GmAfedpDNpBrYlha" target="_blank" class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-[#8D6E63]">
+                            <i class="fa-solid fa-play text-2xl ml-1"></i>
+                        </a>
+                    </div>
+                    <span class="absolute top-4 left-4 bg-white/90 text-[#3E2723] px-3 py-1 rounded-full text-xs font-bold shadow-sm">EP.02</span>
+                </div>
+                <div class="p-8 flex-grow flex flex-col space-y-4">
+                    <h4 class="text-2xl font-serif font-bold group-hover:text-[#8D6E63] transition-colors">전현수 박사 편</h4>
+                    <p class="text-[#8D6E63] font-bold text-sm italic">"생각을 쉬게 하라"</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-bold bg-[#F5F5F5] px-2 py-0.5 rounded text-[#A1887F]">#정신건강</span>
+                        <span class="text-[10px] font-bold bg-[#F5F5F5] px-2 py-0.5 rounded text-[#A1887F]">#마음챙김</span>
+                        <span class="text-[10px] font-bold bg-[#F5F5F5] px-2 py-0.5 rounded text-[#A1887F]">#휴식</span>
+                    </div>
+                    <p class="text-sm text-[#5D4037] leading-relaxed flex-grow">
+                        끊임없이 돌아가는 현대인의 머릿속. 정신건강의학과 전문의 전현수 박사와 함께 불필요한 생각을 멈추고 진정한 뇌의 휴식을 찾는 방법을 이야기합니다. 과학적 접근과 인문학적 통찰이 만나는 치유의 시간입니다.
+                    </p>
+                    <a href="https://youtu.be/8MX4o7AGB9I?si=GmAfedpDNpBrYlha" target="_blank" class="w-full py-3 bg-[#3E2723] text-white rounded-xl text-center text-sm font-bold hover:bg-[#8D6E63] transition-colors">
+                        영상 시청하기 <i class="fa-solid fa-up-right-from-square ml-2 text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Episode 3: 금강스님 -->
+            <div class="card-hover group bg-white rounded-3xl overflow-hidden border border-[#EFEBE9] flex flex-col h-full transition-all duration-500">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://img.youtube.com/vi/Ev2jxsoBPZY/maxresdefault.jpg" alt="금강스님 편" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <a href="https://youtu.be/Ev2jxsoBPZY?si=0CdOMXvaS_-ulN-u" target="_blank" class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-[#8D6E63]">
+                            <i class="fa-solid fa-play text-2xl ml-1"></i>
+                        </a>
+                    </div>
+                    <span class="absolute top-4 left-4 bg-white/90 text-[#3E2723] px-3 py-1 rounded-full text-xs font-bold shadow-sm">EP.03</span>
+                </div>
+                <div class="p-8 flex-grow flex flex-col space-y-4">
+                    <h4 class="text-2xl font-serif font-bold group-hover:text-[#8D6E63] transition-colors">금강스님 편</h4>
+                    <p class="text-[#8D6E63] font-bold text-sm italic">"물 흐르고 꽃 피네"</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-bold bg-[#F5F5F5] px-2 py-0.5 rounded text-[#A1887F]">#불교철학</span>
+                        <span class="text-[10px] font-bold bg-[#F5F5F5] px-2 py-0.5 rounded text-[#A1887F]">#유연함</span>
+                        <span class="text-[10px] font-bold bg-[#F5F5F5] px-2 py-0.5 rounded text-[#A1887F]">#삶의태도</span>
+                    </div>
+                    <p class="text-sm text-[#5D4037] leading-relaxed flex-grow">
+                        땅끝마을 미황사의 주지 스님이었던 금강스님을 모시고, 삶의 순리와 자연스러움에 대해 이야기 나눕니다. 억지 부리지 않고 물 흐르듯 살아갈 때 비로소 꽃피우는 삶의 아름다움에 대한 깊은 울림을 전합니다.
+                    </p>
+                    <a href="https://youtu.be/Ev2jxsoBPZY?si=0CdOMXvaS_-ulN-u" target="_blank" class="w-full py-3 bg-[#3E2723] text-white rounded-xl text-center text-sm font-bold hover:bg-[#8D6E63] transition-colors">
+                        영상 시청하기 <i class="fa-solid fa-up-right-from-square ml-2 text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended -->
+    <section class="bg-[#F5F1E9] py-24">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-sm font-bold tracking-widest text-[#8D6E63] uppercase">05. Recommendation</h2>
+                <h3 class="text-3xl font-serif font-bold">마인닷과 함께하면 좋은 분들</h3>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="flex items-center space-x-6 p-6 bg-white rounded-2xl shadow-sm">
+                    <div class="text-[#8D6E63] text-2xl"><i class="fa-solid fa-mug-hot"></i></div>
+                    <p class="text-sm font-medium">반복되는 일상에 지쳐 마음의 휴식이 필요한 분</p>
+                </div>
+                <div class="flex items-center space-x-6 p-6 bg-white rounded-2xl shadow-sm">
+                    <div class="text-[#8D6E63] text-2xl"><i class="fa-solid fa-lightbulb"></i></div>
+                    <p class="text-sm font-medium">책을 통해 삶의 통찰과 깊은 지식을 얻고 싶은 분</p>
+                </div>
+                <div class="flex items-center space-x-6 p-6 bg-white rounded-2xl shadow-sm">
+                    <div class="text-[#8D6E63] text-2xl"><i class="fa-solid fa-leaf"></i></div>
+                    <p class="text-sm font-medium">자극적인 콘텐츠 대신 잔잔하고 울림 있는 이야기를 찾는 분</p>
+                </div>
+                <div class="flex items-center space-x-6 p-6 bg-white rounded-2xl shadow-sm">
+                    <div class="text-[#8D6E63] text-2xl"><i class="fa-solid fa-seedling"></i></div>
+                    <p class="text-sm font-medium">내면의 성장을 위한 '생각의 씨앗(Mindot)'을 발견하고 싶은 분</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-24 text-center bg-white">
+        <div class="max-w-3xl mx-auto px-6 space-y-12">
+            <div class="space-y-4">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold leading-tight">
+                    마음에 찍는 한 점의 위로와 지혜,<br>
+                    <span class="text-[#8D6E63]">마인닷</span>에서 만나보세요.
+                </h2>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="https://youtube.com/playlist?list=PL7qq979gQcK3_S8_Cr-J67tRJRM7OgoMc&si=dPsE08QOlOiWqUZA" target="_blank" class="bg-[#3E2723] text-white px-10 py-5 rounded-full font-bold shadow-lg hover:shadow-2xl hover:bg-[#8D6E63] transition-all transform hover:-translate-y-1">
+                    전체 재생목록 시청하기 <i class="fa-solid fa-play ml-2"></i>
+                </a>
+            </div>
+
+            <div class="pt-16 border-t border-[#EFEBE9] flex flex-wrap justify-center gap-10 text-sm font-medium text-[#A1887F]">
+                <a href="#" class="hover:text-[#3E2723] transition-colors uppercase tracking-widest">YouTube @MINDOT</a>
+                <a href="#" class="hover:text-[#3E2723] transition-colors uppercase tracking-widest">Instagram @mindot_official</a>
+                <span class="w-full sm:w-auto opacity-50">&copy; 2024 MINDOT. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
